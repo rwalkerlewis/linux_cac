@@ -279,12 +279,12 @@ backup_ff_profile ()
         print_info "No user profile was found in snap-installed version of Firefox."
     else
         # A user profile exists in the snap version of FF
-        choice=''
-        while [ "$choice" != "y" ] && [ "$choice" != "n" ]
-        do
-            echo -e "\nWould you like to transfer your bookmarks and personalizations to the new version of Firefox? ${INFO_COLOR}(y/n)${NO_COLOR}"
-            read -rp '> ' choice
-        done
+        choice='n'
+        # while [ "$choice" != "y" ] && [ "$choice" != "n" ]
+        # do
+        #     echo -e "\nWould you like to transfer your bookmarks and personalizations to the new version of Firefox? ${INFO_COLOR}(y/n)${NO_COLOR}"
+        #     read -rp '> ' choice
+        # done
 
         if [ "$choice" == "y" ]
         then
