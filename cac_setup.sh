@@ -245,12 +245,12 @@ browser_check ()
             ********************${ERR_COLOR}[ WARNING ]${NO_COLOR}********************\n"
 
             # Prompt user to elect to replace snap firefox with apt firefox
-            choice=''
-            while [ "$choice" != "y" ] && [ "$choice" != "n" ]
-            do
-                echo -e "\nWould you like to switch to the apt version of Firefox? ${INFO_COLOR}(y/n)${NO_COLOR}"
-                read -rp '> ' choice
-            done
+            choice='y'
+            # while [ "$choice" != "y" ] && [ "$choice" != "n" ]
+            # do
+            #     echo -e "\nWould you like to switch to the apt version of Firefox? ${INFO_COLOR}(y/n)${NO_COLOR}"
+            #     read -rp '> ' choice
+            # done
 
             if [ "$choice" == "y" ]
             then
